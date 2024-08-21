@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:rgb(2, 187, 110);
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.label-header{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    background: var(--main-color);
+}
+.label-header-head{
+    margin-top: 40px;
+    color: white;
+}
+
+.form {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 45px;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: black 0px 5px 15px;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+
+
+
+.section input {
+    height: 40px;
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: rgb(229, 225, 225);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+.section input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.section input[type="submit"] {
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.section p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.login-footer {
+    padding-bottom: 60px;
+}
+@media(min-width:425px){
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .label-header{
+        height: 50%;
+    }
+    .form {
+        height: 50%;
+    }
+    .container {
+        width: 30vw;
+        box-shadow: black 0px 5px 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
